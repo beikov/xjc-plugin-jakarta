@@ -3,15 +3,16 @@ plugins {
     id 'java-gradle-plugin'
 
     // publishing
-    id "com.gradle.plugin-publish" version "1.2.1"
-    id "nu.studer.credentials" version "2.1"
+    //id "com.gradle.plugin-publish" version "1.2.1"
+    //id "nu.studer.credentials" version "2.1"
+    id 'maven-publish'
 }
 
 ext {
     //noinspection GrUnresolvedAccess
-    project.setProperty( 'gradle.publish.key', credentials.hibernatePluginPortalUsername )
+    //project.setProperty( 'gradle.publish.key', credentials.hibernatePluginPortalUsername )
     //noinspection GrUnresolvedAccess
-    project.setProperty( 'gradle.publish.secret', credentials.hibernatePluginPortalPassword )
+    //project.setProperty( 'gradle.publish.secret', credentials.hibernatePluginPortalPassword )
 }
 
 group = 'org.hibernate.build.gradle'
